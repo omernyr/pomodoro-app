@@ -1,0 +1,69 @@
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+body {
+  background-color: #30384b;
+  color: #eee;
+}
+
+.main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+button {
+  display: inline-block;
+  width: 100px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.with-text {
+  line-height: 36px;
+  width: auto;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  & > svg {
+    width: 36px;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+}
+
+.slider {
+  height: 40px;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+}
+
+.thumb {
+  height: 40px;
+  width: 40px;
+  background-color: var(--red);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.green {
+  border: 2px solid var(--green);
+}
+.green .thumb {
+  background-color: var(--green);
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
